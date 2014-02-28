@@ -8,8 +8,11 @@
 <body>
 
 	<h1>hello? I really should still be sleeping (details TK)</h1>
-    <h1>{{ object.full_name }}</h1>
-
-
+        <h1>
+            {{ object.full_name }}, a {{ object.age }} year old,
+            {{ object.race }} {{ object.gender|lower }} died on {{ object.date }}
+            in a {{ object.type|lower }} at {{ object.address }} in {{ object.neighborhood }}.
+        </h1>
+        <p>{{ object.story }}</p>
 </body>
 </html>
